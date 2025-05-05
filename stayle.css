@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-image: url(photo_2025-05-03_23-14-48.jpg);
+    background-size: cover;
+    background-color: #333; /* Dark background instead of image */
+    height: 100vh;
+    color: white;
+    position: relative;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links li a:hover{
+    color: burlywood;
+    transition: 0.1s;
+  }
+  .hero-content {
+    backdrop-filter:blur(30px);
+    border: 2px solid rgba(0, 0, 0, 0,8);
+    box-shadow: 
+          10px 10px 0px #ddd,
+          -10px -10px 0px #ddd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 3em;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Services Section */
+
+  .services-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 0px;
+    background: #fff;
+    max-width: 1200px; /* լայն մոնիտորների համար */
+    margin: 0 auto;
+    gap: 30px;
+  }
+  
+  .services-text {
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  .services-boxes {
+    flex: 2;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .service-box {
+    background: #0077a6; /* Blue box color */
+    color: white;
+    padding: 20px;
+    flex: 1;
+  }
+  
+  /* About Section */
+  .about-section {
+    display: flex;
+    padding: 60px 40px;
+    background: #f1f7f9;
+  }
+  
+  .about-img {
+    background-image: url(photo_2025-05-05_03-08-32.jpg);
+    background-size: cover;
+    width: 100%;
+    max-width: 300px;
+    height: 250px;
+    background-color: #ccc; /* Placeholder background color */
+  }
+  
+  .about-text {
+    padding-left: 40px;
+  }
+  
+  .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    background: #006b93;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  .best-products {
+    background: #ffffff;
+    padding: 60px 100px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .best-products h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  
+  .products-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .img{
+    height: 100%;
+  }
+
+  .product-card {
+
+    padding: 20px;
+    flex: 1;
+    width: 500px;
+    height: 400px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+
+  .product-card2 {
+    background-image: url(photo_2025-05-05_03-07-37.jpg);
+    background-size: cover;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+
+  .product-card3 {
+    background-image: url(photo_2025-05-05_03-07-46.jpg);
+    background-size: cover;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  .product-card h3 {
+    margin-bottom: 10px;
+  }
+  
+  .product-card p {
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .price {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .buy-button {
+    text-decoration: none;
+    background: #0077a6;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+    .other-products {
+  background: #fafafa;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.other-products h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.other-products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.small-product-card {
+  height: 300px; /* Ավելի բարձր */
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1em;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-product-card2 {
+  height: 300px; /* Ավելի բարձր */
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1em;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-product-card3 {
+  height: 300px; /* Ավելի բարձր */
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1em;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-product-card4 {
+  height: 300px; /* Ավելի բարձր */
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1em;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-product-card5 {
+  height: 300px; /* Ավելի բարձր */
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1em;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-product-card6 {
+  height: 300px; /* Ավելի բարձր */
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1em;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-product-card7 {
+  height: 300px; /* Ավելի բարձր */
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1em;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-product-card8 {
+  height: 300px; /* Ավելի բարձր */
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1em;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-product-card9 {
+  height: 300px; /* Ավելի բարձր */
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1em;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials-section {
+  background: url(photo_2025-05-05_03-19-56.jpg) center/cover no-repeat;
+  padding: 80px 20px;
+  position: relative;
+  display: flex;
+}
+
+.testimonials-heading {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-left: 5px solid gold;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.stars {
+  color: gold;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.cta-section {
+  background-color: #65351c;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cta-subtext {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: white;
+  color: #65351c;
+}
+
+.contact-section {
+  background-color: #f5f5f5;
+  padding: 60px 20px;
+  text-align: center;
+  color: #333;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #006b91;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #004f6e;
+}
+
+.social-links {
+  margin-top: 30px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #006b91;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #004f6e;
+}
